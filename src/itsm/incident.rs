@@ -1,6 +1,10 @@
 //! ServiceNow/ITSM/Incident - Incident Module
 //! 
 
+use serde::{Deserialize, Serialize};
+
+
+#[derive(Clone,Debug,Default,Serialize, Deserialize)]
 pub struct Incident {
     /// The sys_id of the incident
     pub sys_id: String,
