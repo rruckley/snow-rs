@@ -11,5 +11,8 @@ pub mod itsm;
 
 pub type SnowString = Option<String>;
 
-
 pub mod service_now;
+
+pub fn snow_string(input : impl Into<String>) -> SnowString {
+    Some(input.into())
+}

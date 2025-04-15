@@ -62,3 +62,13 @@ pub struct Incident {
     pub work_notes_list: SnowString,
     pub work_start: SnowString,
 }
+
+#[cfg(test)]
+mod test {
+    use crate::snow_string;
+    #[test]
+    fn test_new_snow_string() {
+        let snow_string = snow_string("test");
+        assert_eq!(snow_string, Some("test".to_string()));
+    }
+}
