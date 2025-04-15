@@ -1,6 +1,9 @@
 //! ServiceNow/CSM/Case - Case Module
 
+use serde::{Deserialize, Serialize};
+
 /// Case Record
+#[derive(Clone, Debug, Default, Serialize, Deserialize)]
 pub struct Case {
     /// Case Number
     pub case_number: String,
