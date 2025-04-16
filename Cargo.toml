@@ -4,6 +4,10 @@ version = "0.1.0"
 edition = "2024"
 authors = ["Ryan Ruckley <rruckley@gmail.com>"]
 description = "A Rust implementation of the ServiceNow APIs"
+repository = "https://github.com/rruckley/snow-rs"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+keywords = ["servicenow", "api", "rust"]
 
 [features]
 csm = []
